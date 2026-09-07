@@ -1,0 +1,11 @@
+{
+  "case": "opacity",
+  "size": 32,
+  "lean_toolchain": "leanprover/lean4:v4.33.1",
+  "lean_validation": "NOT_RUN",
+  "variants": {
+    "bad": "bad",
+    "good": "good"
+  },
+  "identical_parent_source": true
+}

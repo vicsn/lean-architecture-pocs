@@ -1,0 +1,30 @@
+{
+  "created_utc": "2026-09-05T12:39:38.460192+00:00",
+  "toolchain_pin": "leanprover/lean4:v4.33.1",
+  "host": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "cpu_count": 5,
+  "method": "numeric pairs: warm-cache, precompiled children, single-threaded Lean, median whole-process wall/RSS; fanout: default Lake scheduler",
+  "arguments": {
+    "case": "all",
+    "smoke": true,
+    "sizes": null,
+    "repeats": 1,
+    "parent_repetitions": 16,
+    "consumers": 32,
+    "timeout": 180.0,
+    "memory_mib": 4096,
+    "stack_kib": 131072,
+    "threshold": 10.0,
+    "lean": "lean",
+    "lake": "lake",
+    "allow_version_mismatch": false,
+    "work": "/mnt/data/lean_architecture_pocs/work",
+    "out": "/mnt/data/lean_architecture_pocs/ENVIRONMENT_CHECK.json",
+    "keep_sweeping": false,
+    "require_targets": false
+  },
+  "status": "UNAVAILABLE_OR_FAILED",
+  "measurements": [],
+  "error": "Lean is not installed or not on PATH: lean. No Lean measurements were performed."
+}

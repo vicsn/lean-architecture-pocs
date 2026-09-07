@@ -1,0 +1,66 @@
+{
+  "as_of": "2026-09-06",
+  "intended_lean_toolchain": "leanprover/lean4:v4.33.1",
+  "lean_compilation": "COMPILED_AND_PARENT_AXIOM_AUDITED",
+  "host": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "hardware": "Apple M2 Max, 12 logical CPUs, 32 GiB RAM",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "gnu_time": "/opt/homebrew/bin/gtime",
+  "evidence": {
+    "python_tests": "PYTHON_TESTS.txt",
+    "smoke": "smoke-results.json",
+    "full_sweep": "results.json",
+    "work": "work-macos-m2max/"
+  },
+  "python_unittests": {
+    "tests": 13,
+    "passed": 13,
+    "evidence": "PYTHON_TESTS.txt"
+  },
+  "smoke": {
+    "status": "COMPLETE",
+    "repeats": 1,
+    "all_cases_compiled": true,
+    "fanout_measured_rewritten_parent_ratio": 32.0
+  },
+  "full_sweep": {
+    "command": "python3 bench.py --repeats 5 --require-targets --work work-macos-m2max --out results.json",
+    "status": "COMPLETE_WITH_FAILURES",
+    "exit_code": 2,
+    "require_targets": true,
+    "cases_with_measured_threshold": ["conversion", "fanout", "instances"],
+    "tree_dual_rss_and_bytes_10x": false
+  },
+  "measured_lean_performance_ratios": {
+    "conversion_n_65536_wall_s": 17.812314735436626,
+    "tree_d_16_peak_rss_kib": 4.209781666272563,
+    "tree_d_16_serialized_parent_bytes": 14203.655929721815,
+    "instances_k_256_elaboration_heartbeats_raw": 29.940346083788707,
+    "fanout_rewritten_parent_count": 32.0,
+    "opacity_n_128_elaboration_heartbeats_raw": 1.0
+  },
+  "empirically_verified_10x_time_memory_heartbeats_or_bytes": {
+    "conversion_wall_s": true,
+    "tree_peak_rss_kib": false,
+    "tree_serialized_parent_bytes": true,
+    "instances_elaboration_heartbeats_raw": true,
+    "fanout_rewritten_parent_olean_count": true,
+    "opacity_negative_control": true
+  },
+  "static_graph_results": {
+    "bad_parent_descendants": 32,
+    "good_parent_descendants": 1,
+    "parent_fanout_ratio": 32,
+    "bad_descendants_including_aggregate": 33,
+    "good_descendants_including_aggregate": 2,
+    "descendant_ratio_including_aggregate": 16.5,
+    "is_measured_lake_rebuild_result": true,
+    "measured_rewritten_parent_ratio": 32.0
+  },
+  "limitations": [
+    "Tree depth 18 is censored: the bad parent hits the default 4096 MiB Lean memory budget (exit 1, ~4194800 KiB RSS).",
+    "Tree peak RSS at the largest successful depth (16) is 4.21x, so the dual RSS+bytes 10x target is not met on this machine under default limits.",
+    "Instances 1024 and 4096 were not run because K=256 already met the heartbeat threshold.",
+    "work-macos-m2max/ is gitignored (build artifacts); results.json and smoke-results.json are the published measurements."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "case": "tree",
+  "size": 4,
+  "lean_toolchain": "leanprover/lean4:v4.33.1",
+  "lean_validation": "NOT_RUN",
+  "variants": {
+    "bad": "bad",
+    "good": "good"
+  },
+  "syntactic_expansion_leaves": 16,
+  "syntactic_expansion_tree_nodes": 31,
+  "identical_parent_source": false
+}

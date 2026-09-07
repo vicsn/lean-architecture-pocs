@@ -1,0 +1,13 @@
+{
+  "case": "instances",
+  "size": 8,
+  "lean_toolchain": "leanprover/lean4:v4.33.1",
+  "lean_validation": "NOT_RUN",
+  "variants": {
+    "bad": "bad",
+    "good": "good"
+  },
+  "parent_declarations": 16,
+  "optional_backend_adapters": 8,
+  "identical_parent_source": true
+}

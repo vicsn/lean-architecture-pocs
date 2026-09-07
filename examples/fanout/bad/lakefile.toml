@@ -1,0 +1,6 @@
+name = "fanout"
+version = "0.1.0"
+defaultTargets = ["Bench"]
+
+[[lean_lib]]
+name = "Bench"

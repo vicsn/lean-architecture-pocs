@@ -1,0 +1,2910 @@
+{
+  "created_utc": "2026-09-06T19:42:46.928127+00:00",
+  "toolchain_pin": "leanprover/lean4:v4.33.1",
+  "host": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "cpu_count": 12,
+  "method": "numeric pairs: warm-cache, precompiled children, single-threaded Lean, median whole-process wall/RSS; fanout: default Lake scheduler",
+  "arguments": {
+    "case": "all",
+    "smoke": true,
+    "sizes": null,
+    "repeats": 1,
+    "parent_repetitions": 16,
+    "consumers": 32,
+    "timeout": 180.0,
+    "memory_mib": 4096,
+    "stack_kib": 131072,
+    "threshold": 10.0,
+    "lean": "lean",
+    "lake": "lake",
+    "allow_version_mismatch": false,
+    "work": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke",
+    "out": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/smoke-results.json",
+    "keep_sweeping": false,
+    "require_targets": false
+  },
+  "status": "COMPLETE",
+  "measurements": [
+    {
+      "case": "conversion",
+      "size": 16,
+      "metadata": {
+        "case": "conversion",
+        "size": 16,
+        "lean_toolchain": "leanprover/lean4:v4.33.1",
+        "lean_validation": "COMPILED_AND_PARENT_AXIOM_AUDITED",
+        "variants": {
+          "bad": "bad",
+          "good": "good"
+        },
+        "identical_parent_source": true
+      },
+      "status": "OK",
+      "variants": {
+        "bad": {
+          "prebuild": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Common.olean",
+                "Common.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/bad",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/bad/logs/prebuild_Common.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/bad/logs/prebuild_Common.stderr.txt",
+              "status": "OK",
+              "wall_s": 1.634339292,
+              "exit_code": 0,
+              "user_cpu_s": 0.11,
+              "system_cpu_s": 0.32,
+              "cpu_s": 0.43,
+              "peak_rss_kib": 413856,
+              "serialized_parent_bytes": 30768
+            },
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Child.olean",
+                "Child.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/bad",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/bad/logs/prebuild_Child.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/bad/logs/prebuild_Child.stderr.txt",
+              "status": "OK",
+              "wall_s": 0.333333458,
+              "exit_code": 0,
+              "user_cpu_s": 0.09,
+              "system_cpu_s": 0.15,
+              "cpu_s": 0.24,
+              "peak_rss_kib": 406704,
+              "serialized_parent_bytes": 6064
+            }
+          ],
+          "parent_runs": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Parent.olean",
+                "Parent.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/bad",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/bad/logs/repeat0_Parent.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/bad/logs/repeat0_Parent.stderr.txt",
+              "status": "OK",
+              "wall_s": 0.348018625,
+              "exit_code": 0,
+              "user_cpu_s": 0.09,
+              "system_cpu_s": 0.16,
+              "cpu_s": 0.25,
+              "peak_rss_kib": 406336,
+              "serialized_parent_bytes": 4752
+            }
+          ],
+          "baseline_runs": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Baseline.olean",
+                "Baseline.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/bad",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/bad/logs/repeat0_Baseline.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/bad/logs/repeat0_Baseline.stderr.txt",
+              "status": "OK",
+              "wall_s": 0.343887292,
+              "exit_code": 0,
+              "user_cpu_s": 0.09,
+              "system_cpu_s": 0.16,
+              "cpu_s": 0.25,
+              "peak_rss_kib": 403904,
+              "serialized_parent_bytes": 2800
+            }
+          ],
+          "probe_runs": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Probe.olean",
+                "Probe.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/bad",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/bad/logs/repeat0_Probe.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/bad/logs/repeat0_Probe.stderr.txt",
+              "status": "OK",
+              "wall_s": 1.290517334,
+              "exit_code": 0,
+              "user_cpu_s": 0.33,
+              "system_cpu_s": 0.67,
+              "cpu_s": 1.0,
+              "peak_rss_kib": 1299184,
+              "serialized_parent_bytes": 4888,
+              "elaboration_heartbeats_raw": 41605
+            }
+          ],
+          "source_sha256": {
+            "Baseline.lean": "5ba92b3a2e3e6b6cc39869ec3672ffb17c21d4f1b5ffef507e6e50e5e6dacd50",
+            "Child.lean": "e01d4a07b0c2ff33349de036fecc9b2ed4788d7f423fccdd3d7a4df34af641a1",
+            "Common.lean": "3405404d464f5e57b096e09b8f682163d31cb6d8c411af57d4ea30f932183d1f",
+            "Metrics.lean": "5e685250cfac4f3e0fda346d9c1b28f4a92ab8ae2f2659675a9b225c881e8a29",
+            "Parent.lean": "02265875b957980ad0be02e023c587d225fd3d0e2afa6847e59fa8a51df5446c",
+            "Probe.lean": "ab1c92141a1c894afe3d33b400caced168c7ce927df72705a7dfbcf6080b25a1"
+          },
+          "warmup_Baseline": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Baseline.olean",
+              "Baseline.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/bad",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/bad/logs/warmup_Baseline.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/bad/logs/warmup_Baseline.stderr.txt",
+            "status": "OK",
+            "wall_s": 0.33139075,
+            "exit_code": 0,
+            "user_cpu_s": 0.09,
+            "system_cpu_s": 0.16,
+            "cpu_s": 0.25,
+            "peak_rss_kib": 403920,
+            "serialized_parent_bytes": 2800
+          },
+          "warmup_Parent": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Parent.olean",
+              "Parent.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/bad",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/bad/logs/warmup_Parent.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/bad/logs/warmup_Parent.stderr.txt",
+            "status": "OK",
+            "wall_s": 0.331422875,
+            "exit_code": 0,
+            "user_cpu_s": 0.09,
+            "system_cpu_s": 0.15,
+            "cpu_s": 0.24,
+            "peak_rss_kib": 406304,
+            "serialized_parent_bytes": 4752
+          },
+          "parent_median": {
+            "wall_s": 0.348018625,
+            "cpu_s": 0.25,
+            "peak_rss_kib": 406336,
+            "serialized_parent_bytes": 4752,
+            "elaboration_heartbeats_raw": 41605
+          },
+          "baseline_median": {
+            "wall_s": 0.343887292,
+            "cpu_s": 0.25,
+            "peak_rss_kib": 403904,
+            "serialized_parent_bytes": 2800
+          },
+          "diagnostic_parent_minus_baseline_wall_s": 0.004131333000000015,
+          "metrics_prebuild": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Metrics.olean",
+              "Metrics.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/bad",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/bad/logs/prebuild_Metrics.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/bad/logs/prebuild_Metrics.stderr.txt",
+            "status": "OK",
+            "wall_s": 5.90139975,
+            "exit_code": 0,
+            "user_cpu_s": 0.37,
+            "system_cpu_s": 1.01,
+            "cpu_s": 1.38,
+            "peak_rss_kib": 1304752,
+            "serialized_parent_bytes": 67520
+          },
+          "audit": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Audit.olean",
+              "Audit.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/bad",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/bad/logs/audit.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/bad/logs/audit.stderr.txt",
+            "status": "OK",
+            "wall_s": 0.361324333,
+            "exit_code": 0,
+            "user_cpu_s": 0.09,
+            "system_cpu_s": 0.17,
+            "cpu_s": 0.26,
+            "peak_rss_kib": 400032,
+            "serialized_parent_bytes": 1392
+          }
+        },
+        "good": {
+          "prebuild": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Common.olean",
+                "Common.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/good",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/good/logs/prebuild_Common.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/good/logs/prebuild_Common.stderr.txt",
+              "status": "OK",
+              "wall_s": 0.340235667,
+              "exit_code": 0,
+              "user_cpu_s": 0.09,
+              "system_cpu_s": 0.16,
+              "cpu_s": 0.25,
+              "peak_rss_kib": 413792,
+              "serialized_parent_bytes": 30768
+            },
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Child.olean",
+                "Child.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/good",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/good/logs/prebuild_Child.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/good/logs/prebuild_Child.stderr.txt",
+              "status": "OK",
+              "wall_s": 0.338514458,
+              "exit_code": 0,
+              "user_cpu_s": 0.09,
+              "system_cpu_s": 0.16,
+              "cpu_s": 0.25,
+              "peak_rss_kib": 407952,
+              "serialized_parent_bytes": 7112
+            }
+          ],
+          "parent_runs": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Parent.olean",
+                "Parent.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/good",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/good/logs/repeat0_Parent.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/good/logs/repeat0_Parent.stderr.txt",
+              "status": "OK",
+              "wall_s": 0.350881292,
+              "exit_code": 0,
+              "user_cpu_s": 0.09,
+              "system_cpu_s": 0.15,
+              "cpu_s": 0.24,
+              "peak_rss_kib": 405936,
+              "serialized_parent_bytes": 4752
+            }
+          ],
+          "baseline_runs": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Baseline.olean",
+                "Baseline.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/good",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/good/logs/repeat0_Baseline.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/good/logs/repeat0_Baseline.stderr.txt",
+              "status": "OK",
+              "wall_s": 0.338956708,
+              "exit_code": 0,
+              "user_cpu_s": 0.09,
+              "system_cpu_s": 0.16,
+              "cpu_s": 0.25,
+              "peak_rss_kib": 403728,
+              "serialized_parent_bytes": 2800
+            }
+          ],
+          "probe_runs": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Probe.olean",
+                "Probe.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/good",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/good/logs/repeat0_Probe.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/good/logs/repeat0_Probe.stderr.txt",
+              "status": "OK",
+              "wall_s": 1.243311917,
+              "exit_code": 0,
+              "user_cpu_s": 0.33,
+              "system_cpu_s": 0.67,
+              "cpu_s": 1.0,
+              "peak_rss_kib": 1298896,
+              "serialized_parent_bytes": 4888,
+              "elaboration_heartbeats_raw": 11433
+            }
+          ],
+          "source_sha256": {
+            "Baseline.lean": "5ba92b3a2e3e6b6cc39869ec3672ffb17c21d4f1b5ffef507e6e50e5e6dacd50",
+            "Child.lean": "a9e25229ee2ef05ef5bc2277a5f86f5106059b32f2e4f1e38cded3d5e2bd2054",
+            "Common.lean": "3405404d464f5e57b096e09b8f682163d31cb6d8c411af57d4ea30f932183d1f",
+            "Metrics.lean": "5e685250cfac4f3e0fda346d9c1b28f4a92ab8ae2f2659675a9b225c881e8a29",
+            "Parent.lean": "02265875b957980ad0be02e023c587d225fd3d0e2afa6847e59fa8a51df5446c",
+            "Probe.lean": "ab1c92141a1c894afe3d33b400caced168c7ce927df72705a7dfbcf6080b25a1"
+          },
+          "warmup_Baseline": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Baseline.olean",
+              "Baseline.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/good",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/good/logs/warmup_Baseline.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/good/logs/warmup_Baseline.stderr.txt",
+            "status": "OK",
+            "wall_s": 0.340660792,
+            "exit_code": 0,
+            "user_cpu_s": 0.09,
+            "system_cpu_s": 0.16,
+            "cpu_s": 0.25,
+            "peak_rss_kib": 403904,
+            "serialized_parent_bytes": 2800
+          },
+          "warmup_Parent": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Parent.olean",
+              "Parent.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/good",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/good/logs/warmup_Parent.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/good/logs/warmup_Parent.stderr.txt",
+            "status": "OK",
+            "wall_s": 0.349545625,
+            "exit_code": 0,
+            "user_cpu_s": 0.09,
+            "system_cpu_s": 0.15,
+            "cpu_s": 0.24,
+            "peak_rss_kib": 405920,
+            "serialized_parent_bytes": 4752
+          },
+          "parent_median": {
+            "wall_s": 0.350881292,
+            "cpu_s": 0.24,
+            "peak_rss_kib": 405936,
+            "serialized_parent_bytes": 4752,
+            "elaboration_heartbeats_raw": 11433
+          },
+          "baseline_median": {
+            "wall_s": 0.338956708,
+            "cpu_s": 0.25,
+            "peak_rss_kib": 403728,
+            "serialized_parent_bytes": 2800
+          },
+          "diagnostic_parent_minus_baseline_wall_s": 0.011924584000000016,
+          "metrics_prebuild": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Metrics.olean",
+              "Metrics.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/good",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/good/logs/prebuild_Metrics.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/good/logs/prebuild_Metrics.stderr.txt",
+            "status": "OK",
+            "wall_s": 1.23006925,
+            "exit_code": 0,
+            "user_cpu_s": 0.33,
+            "system_cpu_s": 0.59,
+            "cpu_s": 0.9199999999999999,
+            "peak_rss_kib": 1304608,
+            "serialized_parent_bytes": 67520
+          },
+          "audit": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Audit.olean",
+              "Audit.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/good",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/good/logs/audit.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/conversion/16/good/logs/audit.stderr.txt",
+            "status": "OK",
+            "wall_s": 0.352819833,
+            "exit_code": 0,
+            "user_cpu_s": 0.08,
+            "system_cpu_s": 0.16,
+            "cpu_s": 0.24,
+            "peak_rss_kib": 400032,
+            "serialized_parent_bytes": 1392
+          }
+        }
+      },
+      "bad_over_good": {
+        "cpu_s": 1.0416666666666667,
+        "elaboration_heartbeats_raw": 3.6390273768914545,
+        "peak_rss_kib": 1.0009853770052421,
+        "serialized_parent_bytes": 1.0,
+        "wall_s": 0.9918414943592946
+      },
+      "target_metrics": [
+        "wall_s"
+      ],
+      "threshold": 10.0,
+      "threshold_met_by_metric": {
+        "wall_s": false
+      },
+      "all_targets_met": false
+    },
+    {
+      "case": "tree",
+      "size": 3,
+      "metadata": {
+        "case": "tree",
+        "size": 3,
+        "lean_toolchain": "leanprover/lean4:v4.33.1",
+        "lean_validation": "COMPILED_AND_PARENT_AXIOM_AUDITED",
+        "variants": {
+          "bad": "bad",
+          "good": "good"
+        },
+        "syntactic_expansion_leaves": 8,
+        "syntactic_expansion_tree_nodes": 15,
+        "identical_parent_source": false
+      },
+      "status": "OK",
+      "variants": {
+        "bad": {
+          "prebuild": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Common.olean",
+                "Common.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/bad",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/bad/logs/prebuild_Common.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/bad/logs/prebuild_Common.stderr.txt",
+              "status": "OK",
+              "wall_s": 0.351066667,
+              "exit_code": 0,
+              "user_cpu_s": 0.09,
+              "system_cpu_s": 0.15,
+              "cpu_s": 0.24,
+              "peak_rss_kib": 408816,
+              "serialized_parent_bytes": 17760
+            },
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Child.olean",
+                "Child.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/bad",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/bad/logs/prebuild_Child.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/bad/logs/prebuild_Child.stderr.txt",
+              "status": "OK",
+              "wall_s": 0.350303958,
+              "exit_code": 0,
+              "user_cpu_s": 0.1,
+              "system_cpu_s": 0.16,
+              "cpu_s": 0.26,
+              "peak_rss_kib": 406208,
+              "serialized_parent_bytes": 7376
+            }
+          ],
+          "parent_runs": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Parent.olean",
+                "Parent.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/bad",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/bad/logs/repeat0_Parent.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/bad/logs/repeat0_Parent.stderr.txt",
+              "status": "OK",
+              "wall_s": 0.344339125,
+              "exit_code": 0,
+              "user_cpu_s": 0.09,
+              "system_cpu_s": 0.17,
+              "cpu_s": 0.26,
+              "peak_rss_kib": 408400,
+              "serialized_parent_bytes": 20192
+            }
+          ],
+          "baseline_runs": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Baseline.olean",
+                "Baseline.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/bad",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/bad/logs/repeat0_Baseline.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/bad/logs/repeat0_Baseline.stderr.txt",
+              "status": "OK",
+              "wall_s": 0.338457625,
+              "exit_code": 0,
+              "user_cpu_s": 0.09,
+              "system_cpu_s": 0.15,
+              "cpu_s": 0.24,
+              "peak_rss_kib": 403936,
+              "serialized_parent_bytes": 2800
+            }
+          ],
+          "probe_runs": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Probe.olean",
+                "Probe.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/bad",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/bad/logs/repeat0_Probe.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/bad/logs/repeat0_Probe.stderr.txt",
+              "status": "OK",
+              "wall_s": 1.242233458,
+              "exit_code": 0,
+              "user_cpu_s": 0.32,
+              "system_cpu_s": 0.62,
+              "cpu_s": 0.94,
+              "peak_rss_kib": 1300992,
+              "serialized_parent_bytes": 20744,
+              "elaboration_heartbeats_raw": 56942
+            }
+          ],
+          "source_sha256": {
+            "Baseline.lean": "5ba92b3a2e3e6b6cc39869ec3672ffb17c21d4f1b5ffef507e6e50e5e6dacd50",
+            "Child.lean": "87e5a9b7b3995989329291adc27a26b0d2521356e02328eafa32da8d1a9c77b9",
+            "Common.lean": "690f74b7f5c2ad602b85ea52d12a5d519fdb45bae81fe09ca314e7a301589a1d",
+            "Metrics.lean": "5e685250cfac4f3e0fda346d9c1b28f4a92ab8ae2f2659675a9b225c881e8a29",
+            "Parent.lean": "1ab9b406ccb09f3ac92b2c603ff0ac188fc588fa5b56c98e81a1501aad4adbd9",
+            "Probe.lean": "14654625281d81c01204253a9259e37cd2e0fcc7885615324c0b1ee1d2a56bba"
+          },
+          "warmup_Baseline": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Baseline.olean",
+              "Baseline.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/bad",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/bad/logs/warmup_Baseline.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/bad/logs/warmup_Baseline.stderr.txt",
+            "status": "OK",
+            "wall_s": 0.339150209,
+            "exit_code": 0,
+            "user_cpu_s": 0.09,
+            "system_cpu_s": 0.16,
+            "cpu_s": 0.25,
+            "peak_rss_kib": 404048,
+            "serialized_parent_bytes": 2800
+          },
+          "warmup_Parent": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Parent.olean",
+              "Parent.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/bad",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/bad/logs/warmup_Parent.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/bad/logs/warmup_Parent.stderr.txt",
+            "status": "OK",
+            "wall_s": 0.3401475,
+            "exit_code": 0,
+            "user_cpu_s": 0.09,
+            "system_cpu_s": 0.15,
+            "cpu_s": 0.24,
+            "peak_rss_kib": 408352,
+            "serialized_parent_bytes": 20192
+          },
+          "parent_median": {
+            "wall_s": 0.344339125,
+            "cpu_s": 0.26,
+            "peak_rss_kib": 408400,
+            "serialized_parent_bytes": 20192,
+            "elaboration_heartbeats_raw": 56942
+          },
+          "baseline_median": {
+            "wall_s": 0.338457625,
+            "cpu_s": 0.24,
+            "peak_rss_kib": 403936,
+            "serialized_parent_bytes": 2800
+          },
+          "diagnostic_parent_minus_baseline_wall_s": 0.0058815000000000395,
+          "metrics_prebuild": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Metrics.olean",
+              "Metrics.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/bad",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/bad/logs/prebuild_Metrics.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/bad/logs/prebuild_Metrics.stderr.txt",
+            "status": "OK",
+            "wall_s": 1.241696333,
+            "exit_code": 0,
+            "user_cpu_s": 0.33,
+            "system_cpu_s": 0.6,
+            "cpu_s": 0.9299999999999999,
+            "peak_rss_kib": 1304000,
+            "serialized_parent_bytes": 67520
+          },
+          "audit": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Audit.olean",
+              "Audit.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/bad",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/bad/logs/audit.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/bad/logs/audit.stderr.txt",
+            "status": "OK",
+            "wall_s": 0.3489595,
+            "exit_code": 0,
+            "user_cpu_s": 0.08,
+            "system_cpu_s": 0.18,
+            "cpu_s": 0.26,
+            "peak_rss_kib": 400368,
+            "serialized_parent_bytes": 1392
+          }
+        },
+        "good": {
+          "prebuild": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Common.olean",
+                "Common.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/good",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/good/logs/prebuild_Common.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/good/logs/prebuild_Common.stderr.txt",
+              "status": "OK",
+              "wall_s": 0.336728459,
+              "exit_code": 0,
+              "user_cpu_s": 0.09,
+              "system_cpu_s": 0.16,
+              "cpu_s": 0.25,
+              "peak_rss_kib": 408976,
+              "serialized_parent_bytes": 17760
+            },
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Child.olean",
+                "Child.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/good",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/good/logs/prebuild_Child.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/good/logs/prebuild_Child.stderr.txt",
+              "status": "OK",
+              "wall_s": 0.338447667,
+              "exit_code": 0,
+              "user_cpu_s": 0.09,
+              "system_cpu_s": 0.16,
+              "cpu_s": 0.25,
+              "peak_rss_kib": 407184,
+              "serialized_parent_bytes": 8024
+            }
+          ],
+          "parent_runs": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Parent.olean",
+                "Parent.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/good",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/good/logs/repeat0_Parent.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/good/logs/repeat0_Parent.stderr.txt",
+              "status": "OK",
+              "wall_s": 0.342406334,
+              "exit_code": 0,
+              "user_cpu_s": 0.09,
+              "system_cpu_s": 0.16,
+              "cpu_s": 0.25,
+              "peak_rss_kib": 405920,
+              "serialized_parent_bytes": 5464
+            }
+          ],
+          "baseline_runs": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Baseline.olean",
+                "Baseline.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/good",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/good/logs/repeat0_Baseline.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/good/logs/repeat0_Baseline.stderr.txt",
+              "status": "OK",
+              "wall_s": 0.334576083,
+              "exit_code": 0,
+              "user_cpu_s": 0.08,
+              "system_cpu_s": 0.16,
+              "cpu_s": 0.24,
+              "peak_rss_kib": 403712,
+              "serialized_parent_bytes": 2800
+            }
+          ],
+          "probe_runs": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Probe.olean",
+                "Probe.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/good",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/good/logs/repeat0_Probe.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/good/logs/repeat0_Probe.stderr.txt",
+              "status": "OK",
+              "wall_s": 1.28930725,
+              "exit_code": 0,
+              "user_cpu_s": 0.36,
+              "system_cpu_s": 0.62,
+              "cpu_s": 0.98,
+              "peak_rss_kib": 1298176,
+              "serialized_parent_bytes": 5600,
+              "elaboration_heartbeats_raw": 10724
+            }
+          ],
+          "source_sha256": {
+            "Baseline.lean": "5ba92b3a2e3e6b6cc39869ec3672ffb17c21d4f1b5ffef507e6e50e5e6dacd50",
+            "Child.lean": "c182317fbe0505fd487459afca3a820687c03574c4c5fcd857dcca12c1c1f012",
+            "Common.lean": "690f74b7f5c2ad602b85ea52d12a5d519fdb45bae81fe09ca314e7a301589a1d",
+            "Metrics.lean": "5e685250cfac4f3e0fda346d9c1b28f4a92ab8ae2f2659675a9b225c881e8a29",
+            "Parent.lean": "03dbabc96240d5958457c08686ee96ee62bf37bb5dadc0c9175c797abbed8dc5",
+            "Probe.lean": "51a40d87c5e14945c5ad8c5240ceeae6b53b47d6b818abfeda56b6f1687a08d0"
+          },
+          "warmup_Baseline": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Baseline.olean",
+              "Baseline.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/good",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/good/logs/warmup_Baseline.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/good/logs/warmup_Baseline.stderr.txt",
+            "status": "OK",
+            "wall_s": 0.334107916,
+            "exit_code": 0,
+            "user_cpu_s": 0.09,
+            "system_cpu_s": 0.15,
+            "cpu_s": 0.24,
+            "peak_rss_kib": 404016,
+            "serialized_parent_bytes": 2800
+          },
+          "warmup_Parent": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Parent.olean",
+              "Parent.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/good",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/good/logs/warmup_Parent.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/good/logs/warmup_Parent.stderr.txt",
+            "status": "OK",
+            "wall_s": 0.342941375,
+            "exit_code": 0,
+            "user_cpu_s": 0.09,
+            "system_cpu_s": 0.17,
+            "cpu_s": 0.26,
+            "peak_rss_kib": 405872,
+            "serialized_parent_bytes": 5464
+          },
+          "parent_median": {
+            "wall_s": 0.342406334,
+            "cpu_s": 0.25,
+            "peak_rss_kib": 405920,
+            "serialized_parent_bytes": 5464,
+            "elaboration_heartbeats_raw": 10724
+          },
+          "baseline_median": {
+            "wall_s": 0.334576083,
+            "cpu_s": 0.24,
+            "peak_rss_kib": 403712,
+            "serialized_parent_bytes": 2800
+          },
+          "diagnostic_parent_minus_baseline_wall_s": 0.007830250999999955,
+          "metrics_prebuild": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Metrics.olean",
+              "Metrics.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/good",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/good/logs/prebuild_Metrics.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/good/logs/prebuild_Metrics.stderr.txt",
+            "status": "OK",
+            "wall_s": 1.231720958,
+            "exit_code": 0,
+            "user_cpu_s": 0.34,
+            "system_cpu_s": 0.59,
+            "cpu_s": 0.9299999999999999,
+            "peak_rss_kib": 1304688,
+            "serialized_parent_bytes": 67520
+          },
+          "audit": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Audit.olean",
+              "Audit.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/good",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/good/logs/audit.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/tree/3/good/logs/audit.stderr.txt",
+            "status": "OK",
+            "wall_s": 0.351269375,
+            "exit_code": 0,
+            "user_cpu_s": 0.08,
+            "system_cpu_s": 0.17,
+            "cpu_s": 0.25,
+            "peak_rss_kib": 400096,
+            "serialized_parent_bytes": 1392
+          }
+        }
+      },
+      "bad_over_good": {
+        "cpu_s": 1.04,
+        "elaboration_heartbeats_raw": 5.309772472957851,
+        "peak_rss_kib": 1.0061095782420182,
+        "serialized_parent_bytes": 3.6954612005856515,
+        "wall_s": 1.0056447291071433
+      },
+      "target_metrics": [
+        "peak_rss_kib",
+        "serialized_parent_bytes"
+      ],
+      "threshold": 10.0,
+      "threshold_met_by_metric": {
+        "peak_rss_kib": false,
+        "serialized_parent_bytes": false
+      },
+      "all_targets_met": false
+    },
+    {
+      "case": "instances",
+      "size": 4,
+      "metadata": {
+        "case": "instances",
+        "size": 4,
+        "lean_toolchain": "leanprover/lean4:v4.33.1",
+        "lean_validation": "COMPILED_AND_PARENT_AXIOM_AUDITED",
+        "variants": {
+          "bad": "bad",
+          "good": "good"
+        },
+        "parent_declarations": 16,
+        "optional_backend_adapters": 4,
+        "identical_parent_source": true
+      },
+      "status": "OK",
+      "variants": {
+        "bad": {
+          "prebuild": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Common.olean",
+                "Common.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/bad",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/bad/logs/prebuild_Common.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/bad/logs/prebuild_Common.stderr.txt",
+              "status": "OK",
+              "wall_s": 0.351569083,
+              "exit_code": 0,
+              "user_cpu_s": 0.1,
+              "system_cpu_s": 0.15,
+              "cpu_s": 0.25,
+              "peak_rss_kib": 411728,
+              "serialized_parent_bytes": 51280
+            },
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Child.olean",
+                "Child.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/bad",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/bad/logs/prebuild_Child.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/bad/logs/prebuild_Child.stderr.txt",
+              "status": "OK",
+              "wall_s": 0.338534292,
+              "exit_code": 0,
+              "user_cpu_s": 0.09,
+              "system_cpu_s": 0.15,
+              "cpu_s": 0.24,
+              "peak_rss_kib": 408624,
+              "serialized_parent_bytes": 18736
+            }
+          ],
+          "parent_runs": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Parent.olean",
+                "Parent.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/bad",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/bad/logs/repeat0_Parent.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/bad/logs/repeat0_Parent.stderr.txt",
+              "status": "OK",
+              "wall_s": 0.352826625,
+              "exit_code": 0,
+              "user_cpu_s": 0.1,
+              "system_cpu_s": 0.16,
+              "cpu_s": 0.26,
+              "peak_rss_kib": 409136,
+              "serialized_parent_bytes": 12560
+            }
+          ],
+          "baseline_runs": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Baseline.olean",
+                "Baseline.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/bad",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/bad/logs/repeat0_Baseline.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/bad/logs/repeat0_Baseline.stderr.txt",
+              "status": "OK",
+              "wall_s": 0.3458155,
+              "exit_code": 0,
+              "user_cpu_s": 0.09,
+              "system_cpu_s": 0.16,
+              "cpu_s": 0.25,
+              "peak_rss_kib": 404016,
+              "serialized_parent_bytes": 2800
+            }
+          ],
+          "probe_runs": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Probe.olean",
+                "Probe.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/bad",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/bad/logs/repeat0_Probe.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/bad/logs/repeat0_Probe.stderr.txt",
+              "status": "OK",
+              "wall_s": 1.20735975,
+              "exit_code": 0,
+              "user_cpu_s": 0.34,
+              "system_cpu_s": 0.56,
+              "cpu_s": 0.9000000000000001,
+              "peak_rss_kib": 1300912,
+              "serialized_parent_bytes": 12696,
+              "elaboration_heartbeats_raw": 248718
+            }
+          ],
+          "source_sha256": {
+            "Baseline.lean": "5ba92b3a2e3e6b6cc39869ec3672ffb17c21d4f1b5ffef507e6e50e5e6dacd50",
+            "Child.lean": "89bdcda6eafd9ac3669f1d89f457ef847170f3685739bbe6d24bb3787834b754",
+            "Common.lean": "cba7aa976085cfe515f52ce45328e68c4f5152af1a758827350a82ff46cb92b5",
+            "Metrics.lean": "5e685250cfac4f3e0fda346d9c1b28f4a92ab8ae2f2659675a9b225c881e8a29",
+            "Parent.lean": "d5b487c1c2aacda1eb43b27afa78caa7f4c8a98e05cb24edd5c8a6ae16084caf",
+            "Probe.lean": "1decc46510cd8f6d0b82435afe251fdf84a7a0e54c503e2cba55c11165c910c0"
+          },
+          "warmup_Baseline": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Baseline.olean",
+              "Baseline.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/bad",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/bad/logs/warmup_Baseline.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/bad/logs/warmup_Baseline.stderr.txt",
+            "status": "OK",
+            "wall_s": 0.345949084,
+            "exit_code": 0,
+            "user_cpu_s": 0.09,
+            "system_cpu_s": 0.16,
+            "cpu_s": 0.25,
+            "peak_rss_kib": 403968,
+            "serialized_parent_bytes": 2800
+          },
+          "warmup_Parent": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Parent.olean",
+              "Parent.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/bad",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/bad/logs/warmup_Parent.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/bad/logs/warmup_Parent.stderr.txt",
+            "status": "OK",
+            "wall_s": 0.353254292,
+            "exit_code": 0,
+            "user_cpu_s": 0.1,
+            "system_cpu_s": 0.16,
+            "cpu_s": 0.26,
+            "peak_rss_kib": 409120,
+            "serialized_parent_bytes": 12560
+          },
+          "parent_median": {
+            "wall_s": 0.352826625,
+            "cpu_s": 0.26,
+            "peak_rss_kib": 409136,
+            "serialized_parent_bytes": 12560,
+            "elaboration_heartbeats_raw": 248718
+          },
+          "baseline_median": {
+            "wall_s": 0.3458155,
+            "cpu_s": 0.25,
+            "peak_rss_kib": 404016,
+            "serialized_parent_bytes": 2800
+          },
+          "diagnostic_parent_minus_baseline_wall_s": 0.007011125000000007,
+          "metrics_prebuild": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Metrics.olean",
+              "Metrics.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/bad",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/bad/logs/prebuild_Metrics.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/bad/logs/prebuild_Metrics.stderr.txt",
+            "status": "OK",
+            "wall_s": 1.225461292,
+            "exit_code": 0,
+            "user_cpu_s": 0.32,
+            "system_cpu_s": 0.6,
+            "cpu_s": 0.9199999999999999,
+            "peak_rss_kib": 1304560,
+            "serialized_parent_bytes": 67520
+          },
+          "audit": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Audit.olean",
+              "Audit.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/bad",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/bad/logs/audit.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/bad/logs/audit.stderr.txt",
+            "status": "OK",
+            "wall_s": 0.331480875,
+            "exit_code": 0,
+            "user_cpu_s": 0.09,
+            "system_cpu_s": 0.16,
+            "cpu_s": 0.25,
+            "peak_rss_kib": 400512,
+            "serialized_parent_bytes": 1392
+          }
+        },
+        "good": {
+          "prebuild": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Common.olean",
+                "Common.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/good",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/good/logs/prebuild_Common.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/good/logs/prebuild_Common.stderr.txt",
+              "status": "OK",
+              "wall_s": 0.341749083,
+              "exit_code": 0,
+              "user_cpu_s": 0.09,
+              "system_cpu_s": 0.16,
+              "cpu_s": 0.25,
+              "peak_rss_kib": 411664,
+              "serialized_parent_bytes": 51280
+            },
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Child.olean",
+                "Child.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/good",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/good/logs/prebuild_Child.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/good/logs/prebuild_Child.stderr.txt",
+              "status": "OK",
+              "wall_s": 0.347318416,
+              "exit_code": 0,
+              "user_cpu_s": 0.09,
+              "system_cpu_s": 0.16,
+              "cpu_s": 0.25,
+              "peak_rss_kib": 408448,
+              "serialized_parent_bytes": 17640
+            }
+          ],
+          "parent_runs": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Parent.olean",
+                "Parent.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/good",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/good/logs/repeat0_Parent.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/good/logs/repeat0_Parent.stderr.txt",
+              "status": "OK",
+              "wall_s": 0.354360625,
+              "exit_code": 0,
+              "user_cpu_s": 0.1,
+              "system_cpu_s": 0.16,
+              "cpu_s": 0.26,
+              "peak_rss_kib": 409184,
+              "serialized_parent_bytes": 12560
+            }
+          ],
+          "baseline_runs": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Baseline.olean",
+                "Baseline.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/good",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/good/logs/repeat0_Baseline.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/good/logs/repeat0_Baseline.stderr.txt",
+              "status": "OK",
+              "wall_s": 0.343245375,
+              "exit_code": 0,
+              "user_cpu_s": 0.09,
+              "system_cpu_s": 0.16,
+              "cpu_s": 0.25,
+              "peak_rss_kib": 403952,
+              "serialized_parent_bytes": 2800
+            }
+          ],
+          "probe_runs": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Probe.olean",
+                "Probe.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/good",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/good/logs/repeat0_Probe.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/good/logs/repeat0_Probe.stderr.txt",
+              "status": "OK",
+              "wall_s": 1.190857666,
+              "exit_code": 0,
+              "user_cpu_s": 0.33,
+              "system_cpu_s": 0.58,
+              "cpu_s": 0.9099999999999999,
+              "peak_rss_kib": 1301840,
+              "serialized_parent_bytes": 12696,
+              "elaboration_heartbeats_raw": 171288
+            }
+          ],
+          "source_sha256": {
+            "Baseline.lean": "5ba92b3a2e3e6b6cc39869ec3672ffb17c21d4f1b5ffef507e6e50e5e6dacd50",
+            "Child.lean": "cf9d85c0f64e5bc2516d3075790687ca8f37bf75a072aaf446cb7242dd1434fd",
+            "Common.lean": "cba7aa976085cfe515f52ce45328e68c4f5152af1a758827350a82ff46cb92b5",
+            "Metrics.lean": "5e685250cfac4f3e0fda346d9c1b28f4a92ab8ae2f2659675a9b225c881e8a29",
+            "Parent.lean": "d5b487c1c2aacda1eb43b27afa78caa7f4c8a98e05cb24edd5c8a6ae16084caf",
+            "Probe.lean": "1decc46510cd8f6d0b82435afe251fdf84a7a0e54c503e2cba55c11165c910c0"
+          },
+          "warmup_Baseline": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Baseline.olean",
+              "Baseline.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/good",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/good/logs/warmup_Baseline.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/good/logs/warmup_Baseline.stderr.txt",
+            "status": "OK",
+            "wall_s": 0.333813875,
+            "exit_code": 0,
+            "user_cpu_s": 0.08,
+            "system_cpu_s": 0.16,
+            "cpu_s": 0.24,
+            "peak_rss_kib": 403856,
+            "serialized_parent_bytes": 2800
+          },
+          "warmup_Parent": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Parent.olean",
+              "Parent.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/good",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/good/logs/warmup_Parent.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/good/logs/warmup_Parent.stderr.txt",
+            "status": "OK",
+            "wall_s": 0.353233583,
+            "exit_code": 0,
+            "user_cpu_s": 0.1,
+            "system_cpu_s": 0.16,
+            "cpu_s": 0.26,
+            "peak_rss_kib": 409072,
+            "serialized_parent_bytes": 12560
+          },
+          "parent_median": {
+            "wall_s": 0.354360625,
+            "cpu_s": 0.26,
+            "peak_rss_kib": 409184,
+            "serialized_parent_bytes": 12560,
+            "elaboration_heartbeats_raw": 171288
+          },
+          "baseline_median": {
+            "wall_s": 0.343245375,
+            "cpu_s": 0.25,
+            "peak_rss_kib": 403952,
+            "serialized_parent_bytes": 2800
+          },
+          "diagnostic_parent_minus_baseline_wall_s": 0.011115249999999965,
+          "metrics_prebuild": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Metrics.olean",
+              "Metrics.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/good",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/good/logs/prebuild_Metrics.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/good/logs/prebuild_Metrics.stderr.txt",
+            "status": "OK",
+            "wall_s": 1.184239875,
+            "exit_code": 0,
+            "user_cpu_s": 0.33,
+            "system_cpu_s": 0.56,
+            "cpu_s": 0.8900000000000001,
+            "peak_rss_kib": 1303616,
+            "serialized_parent_bytes": 67520
+          },
+          "audit": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Audit.olean",
+              "Audit.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/good",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/good/logs/audit.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/instances/4/good/logs/audit.stderr.txt",
+            "status": "OK",
+            "wall_s": 0.333556083,
+            "exit_code": 0,
+            "user_cpu_s": 0.08,
+            "system_cpu_s": 0.17,
+            "cpu_s": 0.25,
+            "peak_rss_kib": 400448,
+            "serialized_parent_bytes": 1392
+          }
+        }
+      },
+      "bad_over_good": {
+        "cpu_s": 1.0,
+        "elaboration_heartbeats_raw": 1.4520456774555135,
+        "peak_rss_kib": 0.9998826933604442,
+        "serialized_parent_bytes": 1.0,
+        "wall_s": 0.9956710766045184
+      },
+      "target_metrics": [
+        "elaboration_heartbeats_raw"
+      ],
+      "threshold": 10.0,
+      "threshold_met_by_metric": {
+        "elaboration_heartbeats_raw": false
+      },
+      "all_targets_met": false
+    },
+    {
+      "case": "opacity",
+      "size": 8,
+      "metadata": {
+        "case": "opacity",
+        "size": 8,
+        "lean_toolchain": "leanprover/lean4:v4.33.1",
+        "lean_validation": "COMPILED_AND_PARENT_AXIOM_AUDITED",
+        "variants": {
+          "bad": "bad",
+          "good": "good"
+        },
+        "identical_parent_source": true
+      },
+      "status": "OK",
+      "variants": {
+        "bad": {
+          "prebuild": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Common.olean",
+                "Common.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/bad",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/bad/logs/prebuild_Common.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/bad/logs/prebuild_Common.stderr.txt",
+              "status": "OK",
+              "wall_s": 0.327635208,
+              "exit_code": 0,
+              "user_cpu_s": 0.09,
+              "system_cpu_s": 0.18,
+              "cpu_s": 0.27,
+              "peak_rss_kib": 399952,
+              "serialized_parent_bytes": 1296
+            },
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Child.olean",
+                "Child.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/bad",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/bad/logs/prebuild_Child.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/bad/logs/prebuild_Child.stderr.txt",
+              "status": "OK",
+              "wall_s": 0.3393455,
+              "exit_code": 0,
+              "user_cpu_s": 0.09,
+              "system_cpu_s": 0.15,
+              "cpu_s": 0.24,
+              "peak_rss_kib": 406016,
+              "serialized_parent_bytes": 5400
+            }
+          ],
+          "parent_runs": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Parent.olean",
+                "Parent.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/bad",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/bad/logs/repeat0_Parent.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/bad/logs/repeat0_Parent.stderr.txt",
+              "status": "OK",
+              "wall_s": 0.315958333,
+              "exit_code": 0,
+              "user_cpu_s": 0.09,
+              "system_cpu_s": 0.14,
+              "cpu_s": 0.23,
+              "peak_rss_kib": 404784,
+              "serialized_parent_bytes": 3704
+            }
+          ],
+          "baseline_runs": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Baseline.olean",
+                "Baseline.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/bad",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/bad/logs/repeat0_Baseline.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/bad/logs/repeat0_Baseline.stderr.txt",
+              "status": "OK",
+              "wall_s": 0.33057325,
+              "exit_code": 0,
+              "user_cpu_s": 0.09,
+              "system_cpu_s": 0.15,
+              "cpu_s": 0.24,
+              "peak_rss_kib": 403888,
+              "serialized_parent_bytes": 2800
+            }
+          ],
+          "probe_runs": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Probe.olean",
+                "Probe.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/bad",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/bad/logs/repeat0_Probe.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/bad/logs/repeat0_Probe.stderr.txt",
+              "status": "OK",
+              "wall_s": 1.201524291,
+              "exit_code": 0,
+              "user_cpu_s": 0.32,
+              "system_cpu_s": 0.57,
+              "cpu_s": 0.8899999999999999,
+              "peak_rss_kib": 1297200,
+              "serialized_parent_bytes": 3840,
+              "elaboration_heartbeats_raw": 3434
+            }
+          ],
+          "source_sha256": {
+            "Baseline.lean": "5ba92b3a2e3e6b6cc39869ec3672ffb17c21d4f1b5ffef507e6e50e5e6dacd50",
+            "Child.lean": "8aba0f418f1142bd8113ec9efdb98b2fa1c5d64632b738707e01fd90e94df28c",
+            "Common.lean": "427dc53408284f1fba1f4b2baeeca933ff16b22a3a22d3e0162dce59d67ac1db",
+            "Metrics.lean": "5e685250cfac4f3e0fda346d9c1b28f4a92ab8ae2f2659675a9b225c881e8a29",
+            "Parent.lean": "1feb38cb28df3d8b13e541440ae386664fc2119dc2ca096a2bde11eb9549b1e6",
+            "Probe.lean": "d8e762183de7b3d2c2464bb456a74c1ae7b54a102ef8891273267753a5fd7522"
+          },
+          "warmup_Baseline": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Baseline.olean",
+              "Baseline.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/bad",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/bad/logs/warmup_Baseline.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/bad/logs/warmup_Baseline.stderr.txt",
+            "status": "OK",
+            "wall_s": 0.319010292,
+            "exit_code": 0,
+            "user_cpu_s": 0.09,
+            "system_cpu_s": 0.14,
+            "cpu_s": 0.23,
+            "peak_rss_kib": 403968,
+            "serialized_parent_bytes": 2800
+          },
+          "warmup_Parent": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Parent.olean",
+              "Parent.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/bad",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/bad/logs/warmup_Parent.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/bad/logs/warmup_Parent.stderr.txt",
+            "status": "OK",
+            "wall_s": 0.326344458,
+            "exit_code": 0,
+            "user_cpu_s": 0.09,
+            "system_cpu_s": 0.16,
+            "cpu_s": 0.25,
+            "peak_rss_kib": 404656,
+            "serialized_parent_bytes": 3704
+          },
+          "parent_median": {
+            "wall_s": 0.315958333,
+            "cpu_s": 0.23,
+            "peak_rss_kib": 404784,
+            "serialized_parent_bytes": 3704,
+            "elaboration_heartbeats_raw": 3434
+          },
+          "baseline_median": {
+            "wall_s": 0.33057325,
+            "cpu_s": 0.24,
+            "peak_rss_kib": 403888,
+            "serialized_parent_bytes": 2800
+          },
+          "diagnostic_parent_minus_baseline_wall_s": -0.014614917000000005,
+          "metrics_prebuild": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Metrics.olean",
+              "Metrics.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/bad",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/bad/logs/prebuild_Metrics.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/bad/logs/prebuild_Metrics.stderr.txt",
+            "status": "OK",
+            "wall_s": 1.179798833,
+            "exit_code": 0,
+            "user_cpu_s": 0.32,
+            "system_cpu_s": 0.6,
+            "cpu_s": 0.9199999999999999,
+            "peak_rss_kib": 1304672,
+            "serialized_parent_bytes": 67520
+          },
+          "audit": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Audit.olean",
+              "Audit.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/bad",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/bad/logs/audit.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/bad/logs/audit.stderr.txt",
+            "status": "OK",
+            "wall_s": 0.327766417,
+            "exit_code": 0,
+            "user_cpu_s": 0.09,
+            "system_cpu_s": 0.16,
+            "cpu_s": 0.25,
+            "peak_rss_kib": 400272,
+            "serialized_parent_bytes": 1392
+          }
+        },
+        "good": {
+          "prebuild": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Common.olean",
+                "Common.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/good",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/good/logs/prebuild_Common.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/good/logs/prebuild_Common.stderr.txt",
+              "status": "OK",
+              "wall_s": 0.328494708,
+              "exit_code": 0,
+              "user_cpu_s": 0.08,
+              "system_cpu_s": 0.15,
+              "cpu_s": 0.22999999999999998,
+              "peak_rss_kib": 399728,
+              "serialized_parent_bytes": 1296
+            },
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Child.olean",
+                "Child.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/good",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/good/logs/prebuild_Child.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/good/logs/prebuild_Child.stderr.txt",
+              "status": "OK",
+              "wall_s": 0.31823875,
+              "exit_code": 0,
+              "user_cpu_s": 0.09,
+              "system_cpu_s": 0.15,
+              "cpu_s": 0.24,
+              "peak_rss_kib": 405056,
+              "serialized_parent_bytes": 3968
+            }
+          ],
+          "parent_runs": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Parent.olean",
+                "Parent.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/good",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/good/logs/repeat0_Parent.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/good/logs/repeat0_Parent.stderr.txt",
+              "status": "OK",
+              "wall_s": 0.319039041,
+              "exit_code": 0,
+              "user_cpu_s": 0.08,
+              "system_cpu_s": 0.14,
+              "cpu_s": 0.22000000000000003,
+              "peak_rss_kib": 404640,
+              "serialized_parent_bytes": 3704
+            }
+          ],
+          "baseline_runs": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Baseline.olean",
+                "Baseline.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/good",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/good/logs/repeat0_Baseline.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/good/logs/repeat0_Baseline.stderr.txt",
+              "status": "OK",
+              "wall_s": 0.324036792,
+              "exit_code": 0,
+              "user_cpu_s": 0.09,
+              "system_cpu_s": 0.14,
+              "cpu_s": 0.23,
+              "peak_rss_kib": 403680,
+              "serialized_parent_bytes": 2800
+            }
+          ],
+          "probe_runs": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lean",
+                "-j",
+                "1",
+                "-s",
+                "131072",
+                "-M",
+                "4096",
+                "-D",
+                "Elab.async=false",
+                "-o",
+                "Probe.olean",
+                "Probe.lean"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/good",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/good/logs/repeat0_Probe.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/good/logs/repeat0_Probe.stderr.txt",
+              "status": "OK",
+              "wall_s": 1.196229959,
+              "exit_code": 0,
+              "user_cpu_s": 0.33,
+              "system_cpu_s": 0.64,
+              "cpu_s": 0.97,
+              "peak_rss_kib": 1297808,
+              "serialized_parent_bytes": 3840,
+              "elaboration_heartbeats_raw": 3434
+            }
+          ],
+          "source_sha256": {
+            "Baseline.lean": "5ba92b3a2e3e6b6cc39869ec3672ffb17c21d4f1b5ffef507e6e50e5e6dacd50",
+            "Child.lean": "a8ae05a5baecc005325308221cdea384ccfc06e3b856e9e99e8f2d1586be8caf",
+            "Common.lean": "427dc53408284f1fba1f4b2baeeca933ff16b22a3a22d3e0162dce59d67ac1db",
+            "Metrics.lean": "5e685250cfac4f3e0fda346d9c1b28f4a92ab8ae2f2659675a9b225c881e8a29",
+            "Parent.lean": "1feb38cb28df3d8b13e541440ae386664fc2119dc2ca096a2bde11eb9549b1e6",
+            "Probe.lean": "d8e762183de7b3d2c2464bb456a74c1ae7b54a102ef8891273267753a5fd7522"
+          },
+          "warmup_Baseline": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Baseline.olean",
+              "Baseline.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/good",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/good/logs/warmup_Baseline.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/good/logs/warmup_Baseline.stderr.txt",
+            "status": "OK",
+            "wall_s": 0.3232715,
+            "exit_code": 0,
+            "user_cpu_s": 0.09,
+            "system_cpu_s": 0.14,
+            "cpu_s": 0.23,
+            "peak_rss_kib": 403952,
+            "serialized_parent_bytes": 2800
+          },
+          "warmup_Parent": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Parent.olean",
+              "Parent.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/good",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/good/logs/warmup_Parent.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/good/logs/warmup_Parent.stderr.txt",
+            "status": "OK",
+            "wall_s": 0.325897208,
+            "exit_code": 0,
+            "user_cpu_s": 0.09,
+            "system_cpu_s": 0.15,
+            "cpu_s": 0.24,
+            "peak_rss_kib": 404768,
+            "serialized_parent_bytes": 3704
+          },
+          "parent_median": {
+            "wall_s": 0.319039041,
+            "cpu_s": 0.22000000000000003,
+            "peak_rss_kib": 404640,
+            "serialized_parent_bytes": 3704,
+            "elaboration_heartbeats_raw": 3434
+          },
+          "baseline_median": {
+            "wall_s": 0.324036792,
+            "cpu_s": 0.23,
+            "peak_rss_kib": 403680,
+            "serialized_parent_bytes": 2800
+          },
+          "diagnostic_parent_minus_baseline_wall_s": -0.004997750999999995,
+          "metrics_prebuild": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Metrics.olean",
+              "Metrics.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/good",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/good/logs/prebuild_Metrics.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/good/logs/prebuild_Metrics.stderr.txt",
+            "status": "OK",
+            "wall_s": 1.220409125,
+            "exit_code": 0,
+            "user_cpu_s": 0.36,
+            "system_cpu_s": 0.66,
+            "cpu_s": 1.02,
+            "peak_rss_kib": 1304080,
+            "serialized_parent_bytes": 67520
+          },
+          "audit": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lean",
+              "-j",
+              "1",
+              "-s",
+              "131072",
+              "-M",
+              "4096",
+              "-D",
+              "Elab.async=false",
+              "-o",
+              "Audit.olean",
+              "Audit.lean"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/good",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/good/logs/audit.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/opacity/8/good/logs/audit.stderr.txt",
+            "status": "OK",
+            "wall_s": 0.32115675,
+            "exit_code": 0,
+            "user_cpu_s": 0.09,
+            "system_cpu_s": 0.18,
+            "cpu_s": 0.27,
+            "peak_rss_kib": 400112,
+            "serialized_parent_bytes": 1392
+          }
+        }
+      },
+      "bad_over_good": {
+        "cpu_s": 1.0454545454545454,
+        "elaboration_heartbeats_raw": 1.0,
+        "peak_rss_kib": 1.000355871886121,
+        "serialized_parent_bytes": 1.0,
+        "wall_s": 0.9903437899313393
+      },
+      "target_metrics": [],
+      "threshold": 10.0,
+      "threshold_met_by_metric": {},
+      "all_targets_met": false
+    },
+    {
+      "case": "fanout",
+      "static": {
+        "case": "fanout",
+        "consumers": 32,
+        "variants": {
+          "bad": {
+            "graph": {
+              "Bench.Child": [],
+              "Bench.Parent0": [
+                "Bench.Child"
+              ],
+              "Bench.Parent1": [
+                "Bench.Child"
+              ],
+              "Bench.Parent2": [
+                "Bench.Child"
+              ],
+              "Bench.Parent3": [
+                "Bench.Child"
+              ],
+              "Bench.Parent4": [
+                "Bench.Child"
+              ],
+              "Bench.Parent5": [
+                "Bench.Child"
+              ],
+              "Bench.Parent6": [
+                "Bench.Child"
+              ],
+              "Bench.Parent7": [
+                "Bench.Child"
+              ],
+              "Bench.Parent8": [
+                "Bench.Child"
+              ],
+              "Bench.Parent9": [
+                "Bench.Child"
+              ],
+              "Bench.Parent10": [
+                "Bench.Child"
+              ],
+              "Bench.Parent11": [
+                "Bench.Child"
+              ],
+              "Bench.Parent12": [
+                "Bench.Child"
+              ],
+              "Bench.Parent13": [
+                "Bench.Child"
+              ],
+              "Bench.Parent14": [
+                "Bench.Child"
+              ],
+              "Bench.Parent15": [
+                "Bench.Child"
+              ],
+              "Bench.Parent16": [
+                "Bench.Child"
+              ],
+              "Bench.Parent17": [
+                "Bench.Child"
+              ],
+              "Bench.Parent18": [
+                "Bench.Child"
+              ],
+              "Bench.Parent19": [
+                "Bench.Child"
+              ],
+              "Bench.Parent20": [
+                "Bench.Child"
+              ],
+              "Bench.Parent21": [
+                "Bench.Child"
+              ],
+              "Bench.Parent22": [
+                "Bench.Child"
+              ],
+              "Bench.Parent23": [
+                "Bench.Child"
+              ],
+              "Bench.Parent24": [
+                "Bench.Child"
+              ],
+              "Bench.Parent25": [
+                "Bench.Child"
+              ],
+              "Bench.Parent26": [
+                "Bench.Child"
+              ],
+              "Bench.Parent27": [
+                "Bench.Child"
+              ],
+              "Bench.Parent28": [
+                "Bench.Child"
+              ],
+              "Bench.Parent29": [
+                "Bench.Child"
+              ],
+              "Bench.Parent30": [
+                "Bench.Child"
+              ],
+              "Bench.Parent31": [
+                "Bench.Child"
+              ],
+              "Bench": [
+                "Bench.Parent0",
+                "Bench.Parent1",
+                "Bench.Parent2",
+                "Bench.Parent3",
+                "Bench.Parent4",
+                "Bench.Parent5",
+                "Bench.Parent6",
+                "Bench.Parent7",
+                "Bench.Parent8",
+                "Bench.Parent9",
+                "Bench.Parent10",
+                "Bench.Parent11",
+                "Bench.Parent12",
+                "Bench.Parent13",
+                "Bench.Parent14",
+                "Bench.Parent15",
+                "Bench.Parent16",
+                "Bench.Parent17",
+                "Bench.Parent18",
+                "Bench.Parent19",
+                "Bench.Parent20",
+                "Bench.Parent21",
+                "Bench.Parent22",
+                "Bench.Parent23",
+                "Bench.Parent24",
+                "Bench.Parent25",
+                "Bench.Parent26",
+                "Bench.Parent27",
+                "Bench.Parent28",
+                "Bench.Parent29",
+                "Bench.Parent30",
+                "Bench.Parent31"
+              ]
+            },
+            "changed_module": "Bench.Child",
+            "changed_file": "Bench/Child.lean",
+            "descendant_parent_modules": [
+              "Bench.Parent0",
+              "Bench.Parent1",
+              "Bench.Parent10",
+              "Bench.Parent11",
+              "Bench.Parent12",
+              "Bench.Parent13",
+              "Bench.Parent14",
+              "Bench.Parent15",
+              "Bench.Parent16",
+              "Bench.Parent17",
+              "Bench.Parent18",
+              "Bench.Parent19",
+              "Bench.Parent2",
+              "Bench.Parent20",
+              "Bench.Parent21",
+              "Bench.Parent22",
+              "Bench.Parent23",
+              "Bench.Parent24",
+              "Bench.Parent25",
+              "Bench.Parent26",
+              "Bench.Parent27",
+              "Bench.Parent28",
+              "Bench.Parent29",
+              "Bench.Parent3",
+              "Bench.Parent30",
+              "Bench.Parent31",
+              "Bench.Parent4",
+              "Bench.Parent5",
+              "Bench.Parent6",
+              "Bench.Parent7",
+              "Bench.Parent8",
+              "Bench.Parent9"
+            ],
+            "parent_count": 32,
+            "all_descendants_including_aggregate": [
+              "Bench",
+              "Bench.Parent0",
+              "Bench.Parent1",
+              "Bench.Parent10",
+              "Bench.Parent11",
+              "Bench.Parent12",
+              "Bench.Parent13",
+              "Bench.Parent14",
+              "Bench.Parent15",
+              "Bench.Parent16",
+              "Bench.Parent17",
+              "Bench.Parent18",
+              "Bench.Parent19",
+              "Bench.Parent2",
+              "Bench.Parent20",
+              "Bench.Parent21",
+              "Bench.Parent22",
+              "Bench.Parent23",
+              "Bench.Parent24",
+              "Bench.Parent25",
+              "Bench.Parent26",
+              "Bench.Parent27",
+              "Bench.Parent28",
+              "Bench.Parent29",
+              "Bench.Parent3",
+              "Bench.Parent30",
+              "Bench.Parent31",
+              "Bench.Parent4",
+              "Bench.Parent5",
+              "Bench.Parent6",
+              "Bench.Parent7",
+              "Bench.Parent8",
+              "Bench.Parent9"
+            ],
+            "descendant_count_including_aggregate": 33
+          },
+          "good": {
+            "graph": {
+              "Bench.BaseChild": [],
+              "Bench.SpecialChild": [
+                "Bench.BaseChild"
+              ],
+              "Bench.Parent0": [
+                "Bench.SpecialChild"
+              ],
+              "Bench.Parent1": [
+                "Bench.BaseChild"
+              ],
+              "Bench.Parent2": [
+                "Bench.BaseChild"
+              ],
+              "Bench.Parent3": [
+                "Bench.BaseChild"
+              ],
+              "Bench.Parent4": [
+                "Bench.BaseChild"
+              ],
+              "Bench.Parent5": [
+                "Bench.BaseChild"
+              ],
+              "Bench.Parent6": [
+                "Bench.BaseChild"
+              ],
+              "Bench.Parent7": [
+                "Bench.BaseChild"
+              ],
+              "Bench.Parent8": [
+                "Bench.BaseChild"
+              ],
+              "Bench.Parent9": [
+                "Bench.BaseChild"
+              ],
+              "Bench.Parent10": [
+                "Bench.BaseChild"
+              ],
+              "Bench.Parent11": [
+                "Bench.BaseChild"
+              ],
+              "Bench.Parent12": [
+                "Bench.BaseChild"
+              ],
+              "Bench.Parent13": [
+                "Bench.BaseChild"
+              ],
+              "Bench.Parent14": [
+                "Bench.BaseChild"
+              ],
+              "Bench.Parent15": [
+                "Bench.BaseChild"
+              ],
+              "Bench.Parent16": [
+                "Bench.BaseChild"
+              ],
+              "Bench.Parent17": [
+                "Bench.BaseChild"
+              ],
+              "Bench.Parent18": [
+                "Bench.BaseChild"
+              ],
+              "Bench.Parent19": [
+                "Bench.BaseChild"
+              ],
+              "Bench.Parent20": [
+                "Bench.BaseChild"
+              ],
+              "Bench.Parent21": [
+                "Bench.BaseChild"
+              ],
+              "Bench.Parent22": [
+                "Bench.BaseChild"
+              ],
+              "Bench.Parent23": [
+                "Bench.BaseChild"
+              ],
+              "Bench.Parent24": [
+                "Bench.BaseChild"
+              ],
+              "Bench.Parent25": [
+                "Bench.BaseChild"
+              ],
+              "Bench.Parent26": [
+                "Bench.BaseChild"
+              ],
+              "Bench.Parent27": [
+                "Bench.BaseChild"
+              ],
+              "Bench.Parent28": [
+                "Bench.BaseChild"
+              ],
+              "Bench.Parent29": [
+                "Bench.BaseChild"
+              ],
+              "Bench.Parent30": [
+                "Bench.BaseChild"
+              ],
+              "Bench.Parent31": [
+                "Bench.BaseChild"
+              ],
+              "Bench": [
+                "Bench.Parent0",
+                "Bench.Parent1",
+                "Bench.Parent2",
+                "Bench.Parent3",
+                "Bench.Parent4",
+                "Bench.Parent5",
+                "Bench.Parent6",
+                "Bench.Parent7",
+                "Bench.Parent8",
+                "Bench.Parent9",
+                "Bench.Parent10",
+                "Bench.Parent11",
+                "Bench.Parent12",
+                "Bench.Parent13",
+                "Bench.Parent14",
+                "Bench.Parent15",
+                "Bench.Parent16",
+                "Bench.Parent17",
+                "Bench.Parent18",
+                "Bench.Parent19",
+                "Bench.Parent20",
+                "Bench.Parent21",
+                "Bench.Parent22",
+                "Bench.Parent23",
+                "Bench.Parent24",
+                "Bench.Parent25",
+                "Bench.Parent26",
+                "Bench.Parent27",
+                "Bench.Parent28",
+                "Bench.Parent29",
+                "Bench.Parent30",
+                "Bench.Parent31"
+              ]
+            },
+            "changed_module": "Bench.SpecialChild",
+            "changed_file": "Bench/SpecialChild.lean",
+            "descendant_parent_modules": [
+              "Bench.Parent0"
+            ],
+            "parent_count": 1,
+            "all_descendants_including_aggregate": [
+              "Bench",
+              "Bench.Parent0"
+            ],
+            "descendant_count_including_aggregate": 2
+          }
+        },
+        "counts_are": "STATIC_GRAPH_COUNTS_NOT_MEASURED_LAKE_REBUILDS",
+        "static_parent_fanout_ratio": 32.0,
+        "static_descendant_ratio_including_aggregate": 16.5
+      },
+      "variants": {
+        "bad": {
+          "rebuilds": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lake",
+                "build"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/fanout/bad",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/fanout/bad/logs/rebuild0.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/fanout/bad/logs/rebuild0.stderr.txt",
+              "status": "OK",
+              "wall_s": 3.554192208,
+              "exit_code": 0,
+              "user_cpu_s": 4.35,
+              "system_cpu_s": 11.89,
+              "cpu_s": 16.240000000000002,
+              "peak_rss_kib": 408304,
+              "rewritten_olean_modules": [
+                "Bench",
+                "Bench.Child",
+                "Bench.Parent0",
+                "Bench.Parent1",
+                "Bench.Parent10",
+                "Bench.Parent11",
+                "Bench.Parent12",
+                "Bench.Parent13",
+                "Bench.Parent14",
+                "Bench.Parent15",
+                "Bench.Parent16",
+                "Bench.Parent17",
+                "Bench.Parent18",
+                "Bench.Parent19",
+                "Bench.Parent2",
+                "Bench.Parent20",
+                "Bench.Parent21",
+                "Bench.Parent22",
+                "Bench.Parent23",
+                "Bench.Parent24",
+                "Bench.Parent25",
+                "Bench.Parent26",
+                "Bench.Parent27",
+                "Bench.Parent28",
+                "Bench.Parent29",
+                "Bench.Parent3",
+                "Bench.Parent30",
+                "Bench.Parent31",
+                "Bench.Parent4",
+                "Bench.Parent5",
+                "Bench.Parent6",
+                "Bench.Parent7",
+                "Bench.Parent8",
+                "Bench.Parent9"
+              ],
+              "rewritten_parent_count": 32
+            }
+          ],
+          "clean_build": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lake",
+              "build"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/fanout/bad",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/fanout/bad/logs/clean.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/fanout/bad/logs/clean.stderr.txt",
+            "status": "OK",
+            "wall_s": 3.59798975,
+            "exit_code": 0,
+            "user_cpu_s": 4.51,
+            "system_cpu_s": 11.97,
+            "cpu_s": 16.48,
+            "peak_rss_kib": 408032
+          },
+          "noop_build": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lake",
+              "build"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/fanout/bad",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/fanout/bad/logs/noop.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/fanout/bad/logs/noop.stderr.txt",
+            "status": "OK",
+            "wall_s": 0.151390875,
+            "exit_code": 0,
+            "user_cpu_s": 0.03,
+            "system_cpu_s": 0.03,
+            "cpu_s": 0.06,
+            "peak_rss_kib": 60896
+          },
+          "median_rewritten_parent_count": 32,
+          "median_dirty_wall_s": 3.554192208
+        },
+        "good": {
+          "rebuilds": [
+            {
+              "command": [
+                "/Users/victorsintnicolaas/.elan/bin/lake",
+                "build"
+              ],
+              "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/fanout/good",
+              "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/fanout/good/logs/rebuild0.stdout.txt",
+              "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/fanout/good/logs/rebuild0.stderr.txt",
+              "status": "OK",
+              "wall_s": 1.099053667,
+              "exit_code": 0,
+              "user_cpu_s": 0.31,
+              "system_cpu_s": 0.5,
+              "cpu_s": 0.81,
+              "peak_rss_kib": 407120,
+              "rewritten_olean_modules": [
+                "Bench",
+                "Bench.Parent0",
+                "Bench.SpecialChild"
+              ],
+              "rewritten_parent_count": 1
+            }
+          ],
+          "clean_build": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lake",
+              "build"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/fanout/good",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/fanout/good/logs/clean.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/fanout/good/logs/clean.stderr.txt",
+            "status": "OK",
+            "wall_s": 3.886305208,
+            "exit_code": 0,
+            "user_cpu_s": 4.52,
+            "system_cpu_s": 12.18,
+            "cpu_s": 16.7,
+            "peak_rss_kib": 407536
+          },
+          "noop_build": {
+            "command": [
+              "/Users/victorsintnicolaas/.elan/bin/lake",
+              "build"
+            ],
+            "cwd": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/fanout/good",
+            "stdout": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/fanout/good/logs/noop.stdout.txt",
+            "stderr": "/Users/victorsintnicolaas/programs/lean_architecture_pocs/work-macos-m2max-smoke/fanout/good/logs/noop.stderr.txt",
+            "status": "OK",
+            "wall_s": 0.152616333,
+            "exit_code": 0,
+            "user_cpu_s": 0.03,
+            "system_cpu_s": 0.02,
+            "cpu_s": 0.05,
+            "peak_rss_kib": 60704
+          },
+          "median_rewritten_parent_count": 1,
+          "median_dirty_wall_s": 1.099053667
+        }
+      },
+      "status": "OK",
+      "measured_rewritten_parent_ratio": 32.0,
+      "measured_dirty_wall_ratio": 3.233865929133013,
+      "threshold_met": true
+    }
+  ],
+  "gnu_time": "/opt/homebrew/bin/gtime",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "selected_positive_cases": [
+    "conversion",
+    "fanout",
+    "instances",
+    "tree"
+  ],
+  "cases_with_measured_threshold": [
+    "fanout"
+  ],
+  "all_selected_targets_met": false
+}

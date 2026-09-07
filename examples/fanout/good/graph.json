@@ -1,0 +1,149 @@
+{
+  "graph": {
+    "Bench.BaseChild": [],
+    "Bench.SpecialChild": [
+      "Bench.BaseChild"
+    ],
+    "Bench.Parent0": [
+      "Bench.SpecialChild"
+    ],
+    "Bench.Parent1": [
+      "Bench.BaseChild"
+    ],
+    "Bench.Parent2": [
+      "Bench.BaseChild"
+    ],
+    "Bench.Parent3": [
+      "Bench.BaseChild"
+    ],
+    "Bench.Parent4": [
+      "Bench.BaseChild"
+    ],
+    "Bench.Parent5": [
+      "Bench.BaseChild"
+    ],
+    "Bench.Parent6": [
+      "Bench.BaseChild"
+    ],
+    "Bench.Parent7": [
+      "Bench.BaseChild"
+    ],
+    "Bench.Parent8": [
+      "Bench.BaseChild"
+    ],
+    "Bench.Parent9": [
+      "Bench.BaseChild"
+    ],
+    "Bench.Parent10": [
+      "Bench.BaseChild"
+    ],
+    "Bench.Parent11": [
+      "Bench.BaseChild"
+    ],
+    "Bench.Parent12": [
+      "Bench.BaseChild"
+    ],
+    "Bench.Parent13": [
+      "Bench.BaseChild"
+    ],
+    "Bench.Parent14": [
+      "Bench.BaseChild"
+    ],
+    "Bench.Parent15": [
+      "Bench.BaseChild"
+    ],
+    "Bench.Parent16": [
+      "Bench.BaseChild"
+    ],
+    "Bench.Parent17": [
+      "Bench.BaseChild"
+    ],
+    "Bench.Parent18": [
+      "Bench.BaseChild"
+    ],
+    "Bench.Parent19": [
+      "Bench.BaseChild"
+    ],
+    "Bench.Parent20": [
+      "Bench.BaseChild"
+    ],
+    "Bench.Parent21": [
+      "Bench.BaseChild"
+    ],
+    "Bench.Parent22": [
+      "Bench.BaseChild"
+    ],
+    "Bench.Parent23": [
+      "Bench.BaseChild"
+    ],
+    "Bench.Parent24": [
+      "Bench.BaseChild"
+    ],
+    "Bench.Parent25": [
+      "Bench.BaseChild"
+    ],
+    "Bench.Parent26": [
+      "Bench.BaseChild"
+    ],
+    "Bench.Parent27": [
+      "Bench.BaseChild"
+    ],
+    "Bench.Parent28": [
+      "Bench.BaseChild"
+    ],
+    "Bench.Parent29": [
+      "Bench.BaseChild"
+    ],
+    "Bench.Parent30": [
+      "Bench.BaseChild"
+    ],
+    "Bench.Parent31": [
+      "Bench.BaseChild"
+    ],
+    "Bench": [
+      "Bench.Parent0",
+      "Bench.Parent1",
+      "Bench.Parent2",
+      "Bench.Parent3",
+      "Bench.Parent4",
+      "Bench.Parent5",
+      "Bench.Parent6",
+      "Bench.Parent7",
+      "Bench.Parent8",
+      "Bench.Parent9",
+      "Bench.Parent10",
+      "Bench.Parent11",
+      "Bench.Parent12",
+      "Bench.Parent13",
+      "Bench.Parent14",
+      "Bench.Parent15",
+      "Bench.Parent16",
+      "Bench.Parent17",
+      "Bench.Parent18",
+      "Bench.Parent19",
+      "Bench.Parent20",
+      "Bench.Parent21",
+      "Bench.Parent22",
+      "Bench.Parent23",
+      "Bench.Parent24",
+      "Bench.Parent25",
+      "Bench.Parent26",
+      "Bench.Parent27",
+      "Bench.Parent28",
+      "Bench.Parent29",
+      "Bench.Parent30",
+      "Bench.Parent31"
+    ]
+  },
+  "changed_module": "Bench.SpecialChild",
+  "changed_file": "Bench/SpecialChild.lean",
+  "descendant_parent_modules": [
+    "Bench.Parent0"
+  ],
+  "parent_count": 1,
+  "all_descendants_including_aggregate": [
+    "Bench",
+    "Bench.Parent0"
+  ],
+  "descendant_count_including_aggregate": 2
+}

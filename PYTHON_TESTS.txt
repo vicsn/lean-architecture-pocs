@@ -1,0 +1,18 @@
+test_actual_optional_instance_difference (test_harness.GeneratorTests.test_actual_optional_instance_difference) ... ok
+test_changed_theorem_substitution (test_harness.GeneratorTests.test_changed_theorem_substitution) ... ok
+test_equal_parent_source_where_claimed (test_harness.GeneratorTests.test_equal_parent_source_where_claimed) ... ok
+test_fanout_counts_and_real_specialized_consumer (test_harness.GeneratorTests.test_fanout_counts_and_real_specialized_consumer) ... ok
+test_graph_algorithm (test_harness.GeneratorTests.test_graph_algorithm) ... ok
+test_invalid_sizes (test_harness.GeneratorTests.test_invalid_sizes) ... ok
+test_tree_same_statement_different_interface (test_harness.GeneratorTests.test_tree_same_statement_different_interface) ... ok
+test_artifact_size_includes_split_oleans (test_harness.PlumbingTests.test_artifact_size_includes_split_oleans) ... ok
+test_no_medians_of_failed_runs (test_harness.PlumbingTests.test_no_medians_of_failed_runs) ... ok
+test_process_failure_is_not_success (test_harness.PlumbingTests.test_process_failure_is_not_success) ... ok
+test_process_success_and_rss (test_harness.PlumbingTests.test_process_success_and_rss) ... ok
+test_timeout_is_censored (test_harness.PlumbingTests.test_timeout_is_censored) ... ok
+test_zero_denominator_is_not_infinity (test_harness.PlumbingTests.test_zero_denominator_is_not_infinity) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.163s
+
+OK

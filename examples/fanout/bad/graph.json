@@ -1,0 +1,208 @@
+{
+  "graph": {
+    "Bench.Child": [],
+    "Bench.Parent0": [
+      "Bench.Child"
+    ],
+    "Bench.Parent1": [
+      "Bench.Child"
+    ],
+    "Bench.Parent2": [
+      "Bench.Child"
+    ],
+    "Bench.Parent3": [
+      "Bench.Child"
+    ],
+    "Bench.Parent4": [
+      "Bench.Child"
+    ],
+    "Bench.Parent5": [
+      "Bench.Child"
+    ],
+    "Bench.Parent6": [
+      "Bench.Child"
+    ],
+    "Bench.Parent7": [
+      "Bench.Child"
+    ],
+    "Bench.Parent8": [
+      "Bench.Child"
+    ],
+    "Bench.Parent9": [
+      "Bench.Child"
+    ],
+    "Bench.Parent10": [
+      "Bench.Child"
+    ],
+    "Bench.Parent11": [
+      "Bench.Child"
+    ],
+    "Bench.Parent12": [
+      "Bench.Child"
+    ],
+    "Bench.Parent13": [
+      "Bench.Child"
+    ],
+    "Bench.Parent14": [
+      "Bench.Child"
+    ],
+    "Bench.Parent15": [
+      "Bench.Child"
+    ],
+    "Bench.Parent16": [
+      "Bench.Child"
+    ],
+    "Bench.Parent17": [
+      "Bench.Child"
+    ],
+    "Bench.Parent18": [
+      "Bench.Child"
+    ],
+    "Bench.Parent19": [
+      "Bench.Child"
+    ],
+    "Bench.Parent20": [
+      "Bench.Child"
+    ],
+    "Bench.Parent21": [
+      "Bench.Child"
+    ],
+    "Bench.Parent22": [
+      "Bench.Child"
+    ],
+    "Bench.Parent23": [
+      "Bench.Child"
+    ],
+    "Bench.Parent24": [
+      "Bench.Child"
+    ],
+    "Bench.Parent25": [
+      "Bench.Child"
+    ],
+    "Bench.Parent26": [
+      "Bench.Child"
+    ],
+    "Bench.Parent27": [
+      "Bench.Child"
+    ],
+    "Bench.Parent28": [
+      "Bench.Child"
+    ],
+    "Bench.Parent29": [
+      "Bench.Child"
+    ],
+    "Bench.Parent30": [
+      "Bench.Child"
+    ],
+    "Bench.Parent31": [
+      "Bench.Child"
+    ],
+    "Bench": [
+      "Bench.Parent0",
+      "Bench.Parent1",
+      "Bench.Parent2",
+      "Bench.Parent3",
+      "Bench.Parent4",
+      "Bench.Parent5",
+      "Bench.Parent6",
+      "Bench.Parent7",
+      "Bench.Parent8",
+      "Bench.Parent9",
+      "Bench.Parent10",
+      "Bench.Parent11",
+      "Bench.Parent12",
+      "Bench.Parent13",
+      "Bench.Parent14",
+      "Bench.Parent15",
+      "Bench.Parent16",
+      "Bench.Parent17",
+      "Bench.Parent18",
+      "Bench.Parent19",
+      "Bench.Parent20",
+      "Bench.Parent21",
+      "Bench.Parent22",
+      "Bench.Parent23",
+      "Bench.Parent24",
+      "Bench.Parent25",
+      "Bench.Parent26",
+      "Bench.Parent27",
+      "Bench.Parent28",
+      "Bench.Parent29",
+      "Bench.Parent30",
+      "Bench.Parent31"
+    ]
+  },
+  "changed_module": "Bench.Child",
+  "changed_file": "Bench/Child.lean",
+  "descendant_parent_modules": [
+    "Bench.Parent0",
+    "Bench.Parent1",
+    "Bench.Parent10",
+    "Bench.Parent11",
+    "Bench.Parent12",
+    "Bench.Parent13",
+    "Bench.Parent14",
+    "Bench.Parent15",
+    "Bench.Parent16",
+    "Bench.Parent17",
+    "Bench.Parent18",
+    "Bench.Parent19",
+    "Bench.Parent2",
+    "Bench.Parent20",
+    "Bench.Parent21",
+    "Bench.Parent22",
+    "Bench.Parent23",
+    "Bench.Parent24",
+    "Bench.Parent25",
+    "Bench.Parent26",
+    "Bench.Parent27",
+    "Bench.Parent28",
+    "Bench.Parent29",
+    "Bench.Parent3",
+    "Bench.Parent30",
+    "Bench.Parent31",
+    "Bench.Parent4",
+    "Bench.Parent5",
+    "Bench.Parent6",
+    "Bench.Parent7",
+    "Bench.Parent8",
+    "Bench.Parent9"
+  ],
+  "parent_count": 32,
+  "all_descendants_including_aggregate": [
+    "Bench",
+    "Bench.Parent0",
+    "Bench.Parent1",
+    "Bench.Parent10",
+    "Bench.Parent11",
+    "Bench.Parent12",
+    "Bench.Parent13",
+    "Bench.Parent14",
+    "Bench.Parent15",
+    "Bench.Parent16",
+    "Bench.Parent17",
+    "Bench.Parent18",
+    "Bench.Parent19",
+    "Bench.Parent2",
+    "Bench.Parent20",
+    "Bench.Parent21",
+    "Bench.Parent22",
+    "Bench.Parent23",
+    "Bench.Parent24",
+    "Bench.Parent25",
+    "Bench.Parent26",
+    "Bench.Parent27",
+    "Bench.Parent28",
+    "Bench.Parent29",
+    "Bench.Parent3",
+    "Bench.Parent30",
+    "Bench.Parent31",
+    "Bench.Parent4",
+    "Bench.Parent5",
+    "Bench.Parent6",
+    "Bench.Parent7",
+    "Bench.Parent8",
+    "Bench.Parent9"
+  ],
+  "descendant_count_including_aggregate": 33
+}
